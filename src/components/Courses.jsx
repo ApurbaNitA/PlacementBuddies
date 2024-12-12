@@ -2,22 +2,25 @@ import React from "react";
 
 const courses = [
   {
-    title: "ReactJS Masterclass",
-    description: "Master React and build scalable web applications.",
+    title: "Process Control",
+    description: "One stop solution for Process Control.",
     image: "https://via.placeholder.com/300x200", // Replace with actual image URLs
-    duration: "8 weeks",
+    duration: "2 hours",
+    src:"https://www.youtube.com/playlist?list=PLEd-6ZYEX_7dHVWadw7A_Jzpj3afHRIQD",
   },
   {
-    title: "Java Fullstack Bootcamp",
-    description: "Learn full-stack development with Java and React.",
+    title: "Interview Experience",
+    description: "Gather Interview Experiences for your Dream Company",
     image: "https://via.placeholder.com/300x200",
-    duration: "10 weeks",
+    duration: "20 hours",
+    src:"https://www.youtube.com/playlist?list=PLEd-6ZYEX_7fZWZU0ilnmUdkHTTiWc9u0",
   },
   {
-    title: "DSA Essentials",
-    description: "Prepare for placements with Data Structures & Algorithms.",
+    title: "Industrial Instrumentation",
+    description: "Master Industrial Instrumentation for placements.",
     image: "https://via.placeholder.com/300x200",
-    duration: "6 weeks",
+    duration: "2 hours",
+    src:"https://www.youtube.com/playlist?list=PLEd-6ZYEX_7c2EneBblviLVIRs0JbiI1G",
   },
 ];
 
@@ -37,14 +40,15 @@ const Courses = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              Featured Course: Java Fullstack Bootcamp
+              Featured Playlist: PB Podcast
             </h2>
             <p className="text-gray-600 mb-4">
-              A comprehensive course designed to make you a proficient full-stack developer with Java, React, and modern tools.
+              A comprehensive playlist designed to discuss about different topics with Industry Experts.
             </p>
-            <p className="text-gray-600 mb-6">Duration: 10 weeks</p>
+            {/* <p className="text-gray-600 mb-6">Duration: 10 weeks</p> */}
             <a
-              href="#"
+              href="https://www.youtube.com/@PlacementBuddies/podcasts"
+              target="_blank"
               className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
             >
               Learn More
@@ -52,9 +56,9 @@ const Courses = () => {
           </div>
           <div>
             <img
-              src="https://via.placeholder.com/500x300"
+              src="./src/assets/pb.png"
               alt="Java Fullstack Bootcamp"
-              className="rounded-lg shadow-md"
+              className="w-[500px] h-[300px] rounded-lg shadow-md object-cover"
             />
           </div>
         </div>
@@ -79,7 +83,8 @@ const Courses = () => {
                 <p className="text-gray-600 mt-2">{course.description}</p>
                 <p className="text-gray-500 mt-4">Duration: {course.duration}</p>
                 <a
-                  href="#"
+                  href={course.src}
+                  target="_blank"
                   className="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
                 >
                   View Course

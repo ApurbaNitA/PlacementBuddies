@@ -54,8 +54,8 @@ const Navbar = () => {
 
         {/* Desktop Navigation Links */}
         <div className="hidden md:flex space-x-6">
-          {["/", "/courses", "/contact"].map((path, idx) => {
-            const names = ["Home", "Courses", "Contact"];
+          {["/", "/courses"].map((path, idx) => {
+            const names = ["Home", "Courses"];
             const isActive = location.pathname === path;
 
             return (

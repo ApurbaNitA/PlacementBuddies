@@ -9,56 +9,41 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-black">
+    <footer className="bg-gradient-to-r from-blue-600 to-blue-400 text-white">
       {/* Main Footer Section */}
       <div className="container mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-start">
         {/* Contact Info */}
         <div className="mb-6 md:mb-0">
           <h4 className="text-lg font-bold mb-4">Contact Us</h4>
-          <p className="text-black">Placement Buddies</p>
-          <p className="text-black">Email: placementbuddiesofficial19@gmail.com</p>
-          <p className="text-black">Phone: +91 98765 43210</p>
+          <p className="text-white">Placement Buddies</p>
+          <p className="text-white">Email: placementbuddiesofficial19@gmail.com</p>
+          {/* <p className="text-white">Phone: +91 98765 43210</p> */}
         </div>
 
         {/* Social Media Links */}
         <div className="flex space-x-6">
+          
           <a
-            href="https://facebook.com"
+            href="https://www.instagram.com/placementbuddies_yt/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-black hover:text-gray-400"
-          >
-            <FaFacebook size={24} />
-          </a>
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-black hover:text-gray-400"
-          >
-            <FaTwitter size={24} />
-          </a>
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-black hover:text-gray-400"
+            className="text-white hover:text-blue-200"
           >
             <FaInstagram size={24} />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/company/placement-buddies/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-black hover:text-gray-400"
+            className="text-white hover:text-blue-200"
           >
             <FaLinkedin size={24} />
           </a>
           <a
-            href="https://youtube.com"
+            href="https://www.youtube.com/@PlacementBuddies"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-black hover:text-gray-400"
+            className="text-white hover:text-blue-200"
           >
             <FaYoutube size={24} />
           </a>
@@ -66,8 +51,8 @@ const Footer = () => {
       </div>
 
       {/* Bottom Credit Section */}
-      <div className="bg-gray-100 text-center py-4">
-        <p className="text-black">
+      <div className="bg-gradient-to-r from-blue-600 to-blue-400 text-center py-4">
+        <p className="text-white">
           &copy; {new Date().getFullYear()} Placement Buddies. All Rights Reserved.
         </p>
       </div>
