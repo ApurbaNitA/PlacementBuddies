@@ -9,7 +9,8 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-blue-600 to-blue-400 text-white">
+    <footer className="bg-gradient-to-r from-blue-600 to-blue-400 text-white
+    dark:from-gray-600 dark:to-gray-400">
       {/* Main Footer Section */}
       <div className="container mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-start">
         {/* Contact Info */}
@@ -51,7 +52,8 @@ const Footer = () => {
       </div>
 
       {/* Bottom Credit Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-400 text-center py-4">
+      <div className="bg-gradient-to-r from-blue-600 to-blue-400 text-center py-4
+      dark:from-gray-600 dark:to-gray-400">
         <p className="text-white">
           &copy; {new Date().getFullYear()} Placement Buddies. All Rights Reserved.
         </p>
