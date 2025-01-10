@@ -83,22 +83,48 @@ const Home = ({ showLoginButton }) => {
 
             {/* Testimonials Section */}
             <div className="bg-gray-100 py-16 dark:bg-gray-900 dark:text-white">
-                <h2 className="text-3xl font-bold text-center">What Our Students Say</h2>
-                <div className="mt-8 flex flex-col md:flex-row justify-center items-center gap-8 px-4">
-                    <div className="bg-white shadow-md p-6 rounded w-80 dark:bg-gray-600">
-                        <p className="text-gray-600 dark:text-gray-100">
-                            "The courses are amazing! Helped me crack my dream job."
-                        </p>
-                        <h4 className="mt-4 font-bold">- John Doe</h4>
-                    </div>
-                    <div className="bg-white shadow-md p-6 rounded w-80 dark:bg-gray-600">
-                        <p className="text-gray-600 dark:text-gray-100">
-                            "Great instructors and well-structured material!"
-                        </p>
-                        <h4 className="mt-4 font-bold">- Jane Smith</h4>
+                <h2 className="text-3xl font-bold text-center mb-8">What Our Students Say</h2>
+                <div className="relative overflow-hidden">
+                    <div
+                        className="flex gap-8 animate-scroll-testimonials"
+                        style={{
+                            display: "flex",
+                            animation: "scroll 20s linear infinite",
+                        }}
+                    >
+                        {[
+                            { text: "Placement buddies started to read our requirements.", author: "Ishani Dhar" },
+                            { text: "Watched your video for my interview And I have been selected. Thank you", author: "Eren" },
+                            { text: "Both of you have presented the details in a very good manner with facts and details with openness. Well done", author: "Krishna Bhat" },
+                            { text: "The most wonderful video which gave me a proper guidance from starting for I&t preparation to craking interview and to know about work procedure .I am very much thankful to you for bringing such a unique content.", author: "Pratik Saha" },
+                            { text: "This is one of the best experiences being shared. The way things are explained by Tiash is so crisp and to the point, even a beginner with little knowledge about the profiles of ZS can get an idea of how to start with. Great work Placement Buddies team for showcasing some great talents of NIT Agartala :)", author: "Anshu Sinha" },
+                            { text: "ONE OF THE BEST INTERVIEW I HAVE WATCHED TILL NOW. THE INTERVIEWER ASKED VERY GOOD QUESTIONS AND THE INTERVIEWEE GAVE VERY GOOD ANSWERS WHICH HELPS A LOT OF STUDENTS", author: "Shivam Chauhan" },
+                            { text: "Bhai.....This Video has proved to be so much useful for me as i had my Interview for GET post at L&T construction today only from Mechanical and i performed very well by taking the tips from you two.... Thank u so.much for bringing this experience video...", author: "Saurabh Kumar" },
+                            { text: "After watching videos from Placement Buddies to prepare for my interviews, to actually sharing my own experience here, it's been my pleasure to participate. I'm hoping this video helps at least some of you out there to prepare! My best wishes to all viewers, may your interviews be successful :)", author: "Sreelakshmy Sivadas" },
+                            { text: "Thank you so much bhaiya for such a great advice and especially for my question's response", author: "Gaurav Kumar" },
+                            { text: "Great topics to discuss. Really helpful for freshers", author: "Subhrajit Deb" },
+                        ].map((testimonial, index) => (
+                            <div
+                                key={index}
+                                className="bg-white shadow-md p-6 rounded w-80 dark:bg-gray-600 flex-shrink-0"
+                            >
+                                <p className="text-gray-600 dark:text-gray-100">
+                                    "{testimonial.text}"
+                                </p>
+                                <h4 className="mt-4 font-bold">- {testimonial.author}</h4>
+                            </div>
+                        ))}
                     </div>
                 </div>
+                {/* Keyframes for animation */}
+                <style>{`
+                     @keyframes scroll {
+                     0% { transform: translateX(0); }
+                     100% { transform: translateX(-100%); }
+                     }
+                `}</style>
             </div>
+
 
             {/* Call-to-Action Section */}
             <div className="bg-gradient-to-r from-blue-600 to-blue-400 text-white py-16 text-center dark:from-gray-600 dark:to-gray-400">
